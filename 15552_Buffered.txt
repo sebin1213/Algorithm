@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.StringTokenizer;
+
+public class Main{
+	public static void main(String[] args) throws IOException{
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int T = Integer.parseInt(bf.readLine()); //int변환
+
+        for(int x=0;x<T;x++) {
+        	StringTokenizer st = new StringTokenizer(bf.readLine()); //사이에 공백으로 숫자 구분
+    		int a = Integer.parseInt(st.nextToken()); //int변환
+    		int b = Integer.parseInt(st.nextToken()); //int변환
+        	bw.write(a+b +"\n");//출력
+        }
+        bw.flush();//남아있는 데이터를 모두 출력시킴
+        bw.close();//스트림을 닫음
+	}
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class test{
+	public static void main(String[] args){
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int m = 0;
+		int f;
+		int l;
+		int add=0;
+		int x = 0;
+		int t = n;
+	
+		while (true) {
+
+			x++;
+			f=t/10;
+			l=t%10;
+			add=f+l;
+			add=add%10;
+			m=add+l*10;
+			t=m;
+				
+			if(n==add+l*10) {
+				break;
+			}
+		}
+		System.out.println(x);
+	}
+}
