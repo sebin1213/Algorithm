@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args){
+		Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		int[] ar = new int[n];
+		
+		for(int x=0;x<n;x++) {
+			ar[x]= s.nextInt();
+		}
+		Arrays.sort(ar);
+		System.out.println(ar[0]+" "+ar[n-1]);	
+		
+	}
+}

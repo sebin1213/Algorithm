@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class test{
+	public static void main(String[] args){
+		Scanner s = new Scanner(System.in);
+		
+		int n = s.nextInt();
+		int[] ar = new int[n];
+		int min;
+		
+		for(int x=0;x<n;x++) {
+			ar[x]= s.nextInt();
+		}
+		for(int x=0;x<n-1;x++) {
+			for(int i=x+1;i<n;i++) {
+				if(ar[x]>ar[i]){
+					min=ar[x];
+					ar[x]=ar[i];
+					ar[i]=min;
+				}
+			}
+		}
+		System.out.println(ar[0]+" "+ar[n-1]);	
+		
+	}
+}
