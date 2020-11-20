@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class test{
+	public static void main(String[] args){
+		Scanner s = new Scanner(System.in);
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=s.nextInt();
+		int all=a*b*c;
+		String as = Integer.toString(all);
+		for(int i=0;i<10;i++) {
+			int count=0;
+			for(int x =0;x<as.length() ;x++) {
+				if((as.charAt(x)-48)==i) {
+					count++;
+				}
+			}
+			System.out.println(count);
+		}
+	}
+}
