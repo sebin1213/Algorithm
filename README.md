@@ -25,6 +25,16 @@
 
 
 
+## 시간복잡도 
+
+[URL](https://wayhome25.github.io/python/2017/06/14/time-complexity/)
+
+
+
+
+
+
+
 ## 함수
 
 **자바**
@@ -92,17 +102,33 @@ Counter 객체의 count의 빈도 상위 n개의 값 반환하는 메소드
 
 ### join
 
+**''.join(리스트)**
+''.join(리스트)를 이용하면 매개변수로 들어온 **['a', 'b', 'c'] 이런 식의 리스트를 'abc'의 문자열로 합쳐서 반환**해주는 함수인 것입니다.
+
+**- '구분자'.join(리스트)**
+'구분자'.join(리스트)를 이용하면 리스트의 값과 값 사이에 '구분자'에 들어온 구분자를 넣어서 하나의 문자열로 합쳐줍니다.
+**'_'.join(['a', 'b', 'c']) 라 하면 "a_b_c" 와 같은 형태로** 문자열을 만들어서 반환해 줍니다.
+
+
+
+
+
+### SORT
+
+정렬, 문자열 길이 순 정렬도 가능
+
 ```python
-from collections import Counter
+phone_book = ["12","123","1235","567","88"]
+phone_book.sort(key=len)
 
-X = ["B", "A", "B"]
-y = ["A", "B"]
+# ['12', '88', '123', '567', '1235']
+```
 
-Counter(X)
-# Counter({'B': 2, 'A': 1})
 
-Counter(X)-Counter(y)
-# Counter({'B': 1})
 
+## ZIP
+
+```python
+for X, Y in zip(P, P[1:]):
 ```
 
