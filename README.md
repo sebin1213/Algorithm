@@ -11,26 +11,6 @@
 * ## 📖 Manual
 
   1. 매일매일 `1`문제 풀이
-  2. Weekly Directory Name : `WeekXX`
-     - ex) Week01, Week02
-
-
-
-## 📚 Weekly Schedule
-
-- 2021.12 
-  - 동적계획법
-
-
-
-
-
-## 시간복잡도 
-
-[URL](https://wayhome25.github.io/python/2017/06/14/time-complexity/)
-
-
-
 
 
 
