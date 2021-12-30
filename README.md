@@ -15,12 +15,8 @@
 
 
 
-## 함수
 
-**자바**
 
-문자 반복
-"0".repeat(i)
 
 
 
@@ -111,4 +107,48 @@ phone_book.sort(key=len)
 ```python
 for X, Y in zip(P, P[1:]):
 ```
+
+
+
+### 큐
+
+```python
+from collection import deque
+
+queue = deque()
+
+queue.append()
+
+queue.popleft()
+
+queue.reverse()
+```
+
+
+
+### 최대공약수(유클리드호제법)
+
+X,Y의 최대공약수는 Y 와 R의 최대공약수와 같다
+
+`R = X % Y`
+
+```python
+def gcd(x,y):
+    if x % y ==0:
+        return y
+    else:
+        return gcd(y, x % y)
+```
+
+
+
+## enumerate
+
+```python
+for i, val in enumerate(i):
+	print(i,val)
+    # 값, 인덱스 둘다 출력
+```
+
+
 
