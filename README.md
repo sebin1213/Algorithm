@@ -152,3 +152,22 @@ for i, val in enumerate(i):
 
 
 
+## heapq , deque
+
+**heapq**
+
+```python
+import heapq
+heap = []
+heapq.heappush(heap, 100)
+```
+
+
+
+**deque**
+
+```python
+from collections import deque
+deq = deque()
+```
+
